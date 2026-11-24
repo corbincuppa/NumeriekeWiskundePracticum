@@ -1,0 +1,45 @@
+\documentclass[twoside, kulak]{kulakreport} % options: kulak (default), kuleuven-brugge of kul
+
+\usepackage[dutch]{babel}
+
+\title{Verslag Practicum}
+\subtitle{Ondertitel van het document}
+\author{Daria Dehtiar, Adelina Vozianu}
+\emailaddress{adelina.vozianu@student.kuleuven.be, daria.dehtiar@student.kuleuven.be}
+\date{Academiejaar 2026 -- 2027}
+\faculty{Groep Wetenschap \& Technologie Kulak}
+\group{Numerieke Wiskunde}
+\institute{Informatica}
+\address{
+	\textbf{KU Leuven Kulak} \\
+	\textbf{Groep Wetenschap \& Technologie} \\
+	Etienne Sabbelaan 53, 8500 Kortrijk \\
+	Tel.\ +32 12 34 56 78 \\
+	\href{mailto:\theemailaddress}{\texttt{\theemailaddress}}
+}
+
+\begin{document}
+	
+	\titlepage
+	
+	\tableofcontents
+	
+	\chapter*{Inleiding}
+	Inleidende tekst.
+	
+	\chapter{Numerieke technieken om een stelsel op te lossen}
+	\section{Inverteren}
+	% MOET AANSLUITENDE TEXT IZIJN
+	\subsection{Opdracht 1} % zal later weg doen, wanneer we het aaneensluitend tekst maken
+	De \texttt{inv()} commando inverteert een gegeven vierkante matrix A. Om geen numerieke nauwkeurigheid te verliezen, is het best om de \texttt{backslash-operator $\backslash$} te benutten. 
+	Dit omdat de \texttt{inv()} commando zoals hierboven vermeld, de compleet inverse van de gegeven matrix berekent en daarna om \texttt{x} te bepalen, moet er vermenigvuldigd worden met vector \texttt{b}. \texttt{inv()} vereist dus meerdere operaties. De berekeningen voor de inverse veroorzaken afrondingsfouten (floating-point errors) en die worden daarna gepropageerd met nog de vermenigvuldigingen die ook zelf afrondingsfouten veroorzaken. De \texttt{backslash-operator} doet maar één operatie en lost het lineair stelsel \texttt{Ax = b} direct op.
+	
+	%Dit omdat de \texttt{backslash-operator} of ook gekend als de \texttt{mldivide()} commando
+	
+	\chapter*{Besluit}
+	Afsluitende tekst.
+	
+	\bibliographystyle{unsrt}
+	\bibliography{bibliografieNW}
+	
+\end{document}
